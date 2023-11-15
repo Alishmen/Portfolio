@@ -76,8 +76,8 @@
 							<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнение ТЗ.</p>
 						</div>
 						<div class="header-content__btn">
-							<a class="btn">Познакомиться</a>
-							<a class="btn btn--light">Контакты</a>
+							<a href="#skills" class="btn">Познакомиться</a>
+							<a href="#contacts" class="btn btn--light">Контакты</a>
 						</div>
 					</div>
 					<div class="header-content__photo">
@@ -91,21 +91,26 @@
 		</div>
 	</section>
 
-	<section class="skills">
+	<section class="header-skills" id="skills">
 		<div class="container">
-			<div class="header-skills">
-				<div class="header-skills__left">
-					<h3 class="header-skills__title">Что я умею:</h3>
+			<div class="flex-wrapper">
+				<div class="header-skills__col">
+					<p class="h3">
+						Что я умею:
+					</p>
 					<ul class="header-skills__list">
-						<li class="header-skills__list-item">pixel perfect, полное соответствие макету</li>
-						<li class="header-skills__list-item">верстаю с сеткой или без</li>
-						<li class="header-skills__list-item">адаптивная верстка под мобильные устройства</li>
-						<li class="header-skills__list-item"> оптимизация по retina экраны</li>
-						<li class="header-skills__list-item"> с Bootstrap и без него</li>
+						<li>pixel perfect, полное соответствие макету</li>
+						<li>верстаю с сеткой или без</li>
+						<li>адаптивная верстка под мобильные устройства</li>
+						<li>оптимизация по retina экраны</li>
+						<li>с Bootstrap и без него</li>
 					</ul>
 				</div>
-				<div class="header-skills__right">
-					<h3 class="header-skills__title">На связи:</h3>
+				<div class="header-skills__col">
+					<p class="h3">
+						На связи:
+					</p>
+
 					<ul class="header-skills__socilas">
 						<li>
 							<a href="#!">
@@ -135,12 +140,12 @@
 								</svg>
 							</a>
 						</li> -->
-						<object data="./img/socials/inst.svg" type="image/svg+xml" width="48" height="48"></object>
-						<!-- <li >
+						<!-- <object data="./img/socials/inst.svg" type="image/svg+xml" width="48" height="48"></object> -->
+						<li >
 							<a href="#!">
 								<img src="./img/socials/inst.svg" alt="">
 							</a>
-						</li> -->
+						</li>
 						<li>
 							<a href="#!">
 								<svg class="svg-ws">
@@ -149,6 +154,9 @@
 							</a>
 						</li>
 					</ul>
+					<div class="email">
+						<a href="mailto:burovalbert@mail.ru">burovalbert@mail.ru</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -159,35 +167,52 @@
 			<div class="portfolio-title">
 				<h2 class="h2 grad-border">Портфолио</h2>
 			</div>
-
-			<div class="portofolio-cards__big">
-				<a href="#" class="card-big">
-					<img src="./img/card/1-big.jpg" alt="Link website">
-					<div class="card-big__title">Верстка “Форест тревел”</div>
-					<div class="card-big__subtitle">Верстка многостраничного сайта </div>
-				</a>
-				<a href="#" class="card-big">
-					<img src="./img/card/2-big.jpg" alt="Link website">
-					<div class="card-big__title">Сайт приложения “Юнит”</div>
-					<div class="card-big__subtitle">Верстка лендинга</div>
-				</a>
-			</div>
-			<div class="portofolio-cards__small">
-				<a href="#" class="card-small">
-					<img src="./img/card/1-small.jpg" alt="Link website">
-					<div class="card-small__title">Сайт приложения “Юнит”</div>
-					<div class="card-small__subtitle">Верстка лендинга</div>
-				</a>
-				<a href="#" class="card-small">
-					<img src="./img/card/2-small.jpg" alt="Link website">
-					<div class="card-small__title">Сайт приложения “Юнит”</div>
-					<div class="card-small__subtitle">Верстка лендинга</div>
-				</a>
-				<a href="#" class="card-small">
-					<img src="./img/card/3-small.jpg" alt="Link website">
-					<div class="card-small__title">Сайт приложения “Юнит”</div>
-					<div class="card-small__subtitle">Верстка лендинга</div>
-				</a>
+			<div class="portofolio-wrapper">
+				<div class="portfolio-card">
+					<div class="portfolio-card__img">
+						<img src="./img/card/1-big.jpg" alt="img">
+					</div>
+					<div class="portfolio-card__text">
+						<div class="h4">Верстка “Форест тревел”</div>
+						<p>Верстка многостраничного сайта</p>
+					</div>
+				</div>
+				<div class="portfolio-card">
+					<div class="portfolio-card__img">
+						<img src="./img/card/2-big.jpg" alt="img">
+					</div>
+					<div class="portfolio-card__text">
+						<div class="h4">Сайт приложения “Юнит”</div>
+						<p>Верстка лендинга</p>
+					</div>
+				</div>
+				<div class="portfolio-card">
+					<div class="portfolio-card__img">
+						<img src="./img/card/1-small.jpg" alt="img">
+					</div>
+					<div class="portfolio-card__text">
+						<div class="h4">Верстка “Мир Авто”</div>
+						<p>Верстка многостраничного сайта </p>
+					</div>
+				</div>
+				<div class="portfolio-card">
+					<div class="portfolio-card__img">
+						<img src="./img/card/2-small.jpg" alt="img">
+					</div>
+					<div class="portfolio-card__text">
+						<div class="h4">Верстка “Мир Авто”</div>
+						<p>Верстка многостраничного сайта </p>
+					</div>
+				</div>
+				<div class="portfolio-card">
+					<div class="portfolio-card__img">
+						<img src="./img/card/3-small.jpg" alt="img">
+					</div>
+					<div class="portfolio-card__text">
+						<div class="h4">Верстка “Мир Авто”</div>
+						<p>Верстка многостраничного сайта </p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
