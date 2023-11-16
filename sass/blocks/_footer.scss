@@ -1,0 +1,29 @@
+.footer {
+	background-color: #333333;
+	padding: 40px 0 50px;
+    color: #fff;
+}	
+
+
+.footer__corypthing {
+	span {
+		display: inline-block;
+		font-size: 16px;
+		line-height: 1.4; 
+		margin-bottom: 10px;
+	}
+
+	p {
+		color: #B0B0B0;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	a {
+		font-size: 16px;
+		line-height: 1.5;
+		text-decoration-line: underline;
+		color: #fff;
+	}
+}
+    

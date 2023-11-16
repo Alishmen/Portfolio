@@ -42,7 +42,13 @@ section {
 .svg-fb, .svg-vk, .svg-tg, .svg-inst, .svg-ws {
     width: 48px;
     height: 48px;
+    transition: all 0.4s ease-in;
+
+    &:hover {
+        transform: scale(0.88);
+    }
 }
+
 
 .h2 {
     font-size: 54px;
@@ -58,11 +64,25 @@ section {
 
     border-radius: 50px;
     padding: 19px 40px;
-    background-color: #FBDC4D;
+    background-color: $accent-color;
+    transition: all 0.4s ease-in;
+}
+
+.btn:hover {
+    background-color: $accent-color-hover;
+    color: #fff;
 }
 
 .btn--light {
     background-color: #EFF7FC;
+}
+
+.btn--light:hover {
+    background-color: $accent-color-hover-light;
+}
+
+.btn:active {
+    transform: scale(0.98);
 }
 
 .socials {
@@ -82,7 +102,7 @@ section {
     background-repeat: no-repeat;
     background-position: center bottom 15px;
     background-size: 100% 10px;
-    background-image: linear-gradient(to right, #fbdc4d, #fbdc4d);
+    background-image: linear-gradient(to right, $accent-color, $accent-color);
 }
 
 .h2.grad-border {
@@ -96,10 +116,17 @@ section {
 }
 
 .email {
-    color: #1A71D2;
+    color: $accent-color-link;
     font-size: 22px;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.6;
+}
+
+.telephone {
+    color: $accent-color-link;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.6; 
 }
 
 /* Grid styles */
@@ -137,7 +164,7 @@ section {
 }
 
 button {
-    background-color: #FBDC4D;
+    background-color: $accent-color;
     border-radius: 50%;
 }
 
@@ -166,7 +193,5 @@ button {
 	margin-top: auto; /* sticky footer */
 
 	/* Just for fun */
-	text-align: center;
-	background-color: #e2e2e2;
-	padding: 50px 0;
+
 }

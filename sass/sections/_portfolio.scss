@@ -18,6 +18,8 @@
 .portfolio-card {
     .portfolio-card__img {
         margin-bottom: 16px;
+        width: 350px;
+        height: 220px;
     }
 
     .portfolio-card__text {
@@ -38,8 +40,11 @@
 .portfolio-card:first-child, .portfolio-card:nth-child(2) {
     margin-bottom: 50px;
 
+
     .portfolio-card__img {
         margin-bottom: 20px;
+        width: 540px;
+        height: 370px;
     }
 
     .portfolio-card__text {
