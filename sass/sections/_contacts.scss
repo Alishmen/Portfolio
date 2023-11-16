@@ -4,11 +4,6 @@
     background: linear-gradient(0deg, #F5FBFF 0%, #F5FBFF 100%), #F4F8F9;
 }
 
-.contacts::before {
-    content: "";
-    background-image: url('./img/bg/contacts.png');
-}
-
 .contacts-wrapper {
     display: flex;
     column-gap: 69px;
@@ -43,7 +38,6 @@
 }
 
 .contacts-text {
-    
     width: 538px;
     font-size: 18px;
     line-height: 1.6; 

@@ -12,14 +12,15 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
+    row-gap: 30px;
 }
 
 
 .portfolio-card {
     .portfolio-card__img {
         margin-bottom: 16px;
-        width: 350px;
-        height: 220px;
+        max-width: 350px;
+        max-height: 220px;
     }
 
     .portfolio-card__text {
@@ -38,13 +39,13 @@
 }
 
 .portfolio-card:first-child, .portfolio-card:nth-child(2) {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
 
     .portfolio-card__img {
         margin-bottom: 20px;
-        width: 540px;
-        height: 370px;
+        max-width: 540px;
+        max-height: 370px;
     }
 
     .portfolio-card__text {

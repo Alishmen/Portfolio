@@ -6,17 +6,22 @@
 
 
 .footer__corypthing {
-	span {
-		display: inline-block;
-		font-size: 16px;
-		line-height: 1.4; 
-		margin-bottom: 10px;
-	}
-
 	p {
 		color: #B0B0B0;
 		font-size: 16px;
 		line-height: 1.5;
+
+		span {
+			color: #fff;
+			display: block;
+			font-size: 16px;
+			line-height: 1.4; 
+			margin-bottom: 10px;
+		}
+	}
+
+	p + p {
+		margin-bottom: 15px;
 	}
 
 	a {
@@ -24,6 +29,11 @@
 		line-height: 1.5;
 		text-decoration-line: underline;
 		color: #fff;
+		transition: all 0.4s ease-in;
+
+		&:hover {
+			transform: scale(0.95);
+		}
 	}
 }
     

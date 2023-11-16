@@ -65,30 +65,28 @@
 	</header>
 
 	<section class="header-content">
-		<div class="header-content__wrapper">
-			<div class="container">
-				<div class="flex-wrapper">
-					<div class="header-content-text">
-						<div class="header-content__title">
-							<h1 class="h1 grad-border">Альберт Буров</h1>
-						</div>
-						<div class="header-content__descr visible-descr">
-							<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и
-								выполнение ТЗ.</p>
-						</div>
-						<div class="header-content__btn">
-							<a href="#skills" class="btn">Познакомиться</a>
-							<a href="#contacts" class="btn btn--light">Контакты</a>
-						</div>
+		<div class="container">
+			<div class="flex-wrapper">
+				<div class="header-content-text">
+					<div class="header-content__title">
+						<h1 class="h1 grad-border">Альберт Буров</h1>
 					</div>
-					<div class="header-content__photo">
-						<img src="./img/bg/header-img.jpg" alt="img">
+					<div class="header-content__descr visible-descr">
+						<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и
+							выполнение ТЗ.</p>
+					</div>
+					<div class="header-content__btn">
+						<a href="#skills" class="btn">Познакомиться</a>
+						<a href="#contacts" class="btn btn--light">Контакты</a>
 					</div>
 				</div>
+				<div class="header-content__photo">
+					<img src="./img/bg/header-img.jpg" alt="img">
+				</div>
 			</div>
-			<div class="header-content__banner">
-				<img src="./img/bg/header-bg.png" alt="Banner">
-			</div>
+		</div>
+		<div class="header-content__banner">
+			<img src="./img/bg/header-bg.png" alt="Banner">
 		</div>
 	</section>
 
@@ -111,52 +109,53 @@
 					<p class="h3">
 						На связи:
 					</p>
-
-					<ul class="socials">
-						<li>
-							<a href="#!">
-								<svg class="svg-tg">
-									<use href="./img/socials/svgSprite.svg#svg-tg"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a href="#!">
-								<svg class="svg-vk">
-									<use href="./img/socials/svgSprite.svg#svg-vk"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a href="#!">
-								<svg class="svg-vk">
-									<use href="./img/socials/svgSprite.svg#svg-fb"></use>
-								</svg>
-							</a>
-						</li>
-						<!-- <li style="background-color: rgb(18, 148, 105);">
-							<a href="#!">
-								<svg class="svg-inst">
-									<use href="./img/socials/svgSprite.svg#svg-inst"></use>
-								</svg>
-							</a>
-						</li> -->
-						<!-- <object data="./img/socials/inst.svg" type="image/svg+xml" width="48" height="48"></object> -->
-						<li>
-							<a href="#!" class="svg-inst">
-								<img src="./img/socials/inst.svg" alt="">
-							</a>
-						</li>
-						<li>
-							<a href="#!">
-								<svg class="svg-ws">
-									<use href="./img/socials/svgSprite.svg#svg-whatsap"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+					<div class="socials-wrapper">
+						<ul class="socials">
+							<li>
+								<a href="#!">
+									<svg class="svg-tg">
+										<use href="./img/socials/svgSprite.svg#svg-tg"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<svg class="svg-vk">
+										<use href="./img/socials/svgSprite.svg#svg-vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<svg class="svg-vk">
+										<use href="./img/socials/svgSprite.svg#svg-fb"></use>
+									</svg>
+								</a>
+							</li>
+							<!-- <li style="background-color: rgb(18, 148, 105);">
+								<a href="#!">
+									<svg class="svg-inst">
+										<use href="./img/socials/svgSprite.svg#svg-inst"></use>
+									</svg>
+								</a>
+							</li> -->
+							<!-- <object data="./img/socials/inst.svg" type="image/svg+xml" width="48" height="48"></object> -->
+							<li>
+								<a href="#!" class="svg-inst">
+									<img src="./img/socials/inst.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#!">
+									<svg class="svg-ws">
+										<use href="./img/socials/svgSprite.svg#svg-whatsap"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
 					<div class="email-wrapper">
-						<a class="email" href="mailto:burovalbert@mail.ru">burovalbert@mail.ru</a>
+						<a class="connection" href="mailto:burovalbert@mail.ru">burovalbert@mail.ru</a>
 					</div>
 				</div>
 			</div>
@@ -265,11 +264,11 @@
 					<ul class="contacts-list">
 						<li class="contacts-list__item">
 							<span>Email</span>
-							<a class="email" href="mailto:burovalbert@mail.ru">burovalbert@mail.ru</a>
+							<a class="connection" href="mailto:burovalbert@mail.ru">burovalbert@mail.ru</a>
 						</li>
 						<li class="contacts-list__item">
 							<span>Телефон</span>
-							<a class="telephone" href="tel:+79828257177">+7 (982) 825-71-77</a>
+							<a class="connection" href="tel:+79828257177">+7 (982) 825-71-77</a>
 						</li>
 					</ul>
 					<div class="contact-socials">
@@ -323,8 +322,8 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__corypthing">
-				<span>© 2023 — Альберт Буров</span>
 				<p>
+					<span>© 2023 — Альберт Буров</span>
 					Веб-разработчик из Ижевска, занимаюсь версткой и созданием сайтов. <br> Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru/">WebCademy.ru</a>
 				</p>
 			</div>
