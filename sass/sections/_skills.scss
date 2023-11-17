@@ -19,10 +19,6 @@
     margin-bottom: 30px;
 }
 
-.socials-wrapper {
-    margin-bottom: 13px;
-}
-
 .header-skills__list {
     font-size: 22px;
     font-weight: 400;
@@ -31,7 +27,6 @@
 
 .header-skills__list li{
     margin-bottom: 11px;
-
 }
 
 .header-skills__list li:last-child{
@@ -46,6 +41,13 @@
     }
 }
 
+.socials-wrapper {
+    margin-bottom: 13px;
+}
+
+#skills {
+    scroll-margin-top: 100px;
+}
 
 
 

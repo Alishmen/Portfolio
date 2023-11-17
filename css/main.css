@@ -166,6 +166,9 @@ body > * {
   align-items: center;
   column-gap: 30px;
 }
+.socials li {
+  display: flex;
+}
 
 .flex-wrapper {
   display: flex;
@@ -196,7 +199,7 @@ body > * {
   line-height: 1.3;
 }
 
-.connection {
+.link {
   color: #1A71D2;
   font-size: 22px;
   font-weight: 400;
@@ -303,20 +306,17 @@ body > * {
   color: #fff;
 }
 
-.footer__corypthing p {
-  color: #B0B0B0;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.footer__corypthing p span {
+.footer__corypthing p:first-child {
   color: #fff;
   display: block;
   font-size: 16px;
   line-height: 1.4;
   margin-bottom: 10px;
 }
-.footer__corypthing p + p {
-  margin-bottom: 15px;
+.footer__corypthing p {
+  color: #B0B0B0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .footer__corypthing a {
   font-size: 16px;
@@ -388,10 +388,6 @@ body > * {
   margin-bottom: 30px;
 }
 
-.socials-wrapper {
-  margin-bottom: 13px;
-}
-
 .header-skills__list {
   font-size: 22px;
   font-weight: 400;
@@ -414,6 +410,14 @@ body > * {
   .header-skills__list li::before {
     display: none;
   }
+}
+
+.socials-wrapper {
+  margin-bottom: 13px;
+}
+
+#skills {
+  scroll-margin-top: 100px;
 }
 
 .portfolio {
@@ -476,7 +480,6 @@ body > * {
 }
 
 .section-title {
-  text-align: center;
   margin-bottom: 70px;
 }
 
