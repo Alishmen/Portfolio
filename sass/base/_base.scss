@@ -21,6 +21,10 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+.lock {
+    overflow: hidden;
+}
+
 body > * {
 	flex-shrink: 0; /* sticky footer */
 }
@@ -33,6 +37,11 @@ section {
 .svg-git {
     width: 42px;
     height: 42px;
+
+    @media (max-width: 1199px) {
+        width: 36px;
+        height: 36px;
+    }
 }
 
 .svg-ln {
@@ -41,12 +50,19 @@ section {
 }
 
 .svg-fb, .svg-vk, .svg-tg, .svg-inst, .svg-ws {
+    display: flex;
     width: 48px;
     height: 48px;
     transition: all 0.4s ease-in;
 
     &:hover {
         transform: scale(0.88);
+    }
+
+    // Mobile
+    @media(max-width: 899px) {
+        width: 38px;
+        height: 38px;
     }
 }
 
@@ -60,6 +76,10 @@ section {
     padding: 19px 40px;
     background-color: $accent-color;
     transition: all 0.4s ease-in;
+
+    @media (max-width: 1199px) {
+        padding: 16px 26px;
+    }
 }
 
 .btn:hover {
@@ -69,6 +89,9 @@ section {
 
 .btn--light {
     background-color: #EFF7FC;
+    @media (max-width: 1199px) {
+        padding: 16px 26px;
+    }
 }
 
 .btn--light:hover {
@@ -83,10 +106,11 @@ section {
     display: flex;
     align-items: center;
     column-gap: 30px;
-
-    li {
-        display: flex
-    };
+    // Mobile
+    @media(max-width: 899px) {
+        column-gap: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .flex-wrapper {
@@ -100,6 +124,11 @@ section {
     background-position: center bottom 15px;
     background-size: 100% 10px;
     background-image: linear-gradient(to right, $accent-color, $accent-color);
+
+    // Mobile XS
+    @media(max-width: 599px) {
+        background-position: center bottom 8px;
+    }
 }
 
 .h2.grad-border {
@@ -175,6 +204,14 @@ section {
         //     width: 320px;
         // }
 }
+
+/* Mobile */
+@media (max-width: 899px) {
+    .header .container {
+        width: 100%;
+    }
+}
+
 
 // button {
 //     background-color: $accent-color;

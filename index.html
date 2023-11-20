@@ -39,52 +39,54 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header-wrapper">
+			<div class="header-nav">
+				<!--logo Mobile-->
 				<div class="header-logo">HTML Верстальщик</div>
-				<nav class="nav">
-					<ul class="nav-list">
-						<li class="nav-list__item"><a href="#skills">Навыки</a></li>
-						<li class="nav-list__item"><a href="#portfolio">Портфолио</a></li>
-						<li class="nav-list__item"><a href="#timeline">Как я работаю</a></li>
-						<li class="nav-list__item"><a href="#contacts">Контакты</a></li>
-					</ul>
-					<ul class="socials">
-						<li>
-							<a href="#!">
-								<svg class="svg-tg">
-									<use href="./img/socials/svgSprite.svg#svg-tg"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a href="#!">
-								<svg class="svg-vk">
-									<use href="./img/socials/svgSprite.svg#svg-vk"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a href="#!">
-								<svg class="svg-vk">
-									<use href="./img/socials/svgSprite.svg#svg-fb"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a href="#!" class="svg-inst">
-								<img src="./img/socials/inst.svg" alt="">
-							</a>
-						</li>
-						<li>
-							<a href="#!">
-								<svg class="svg-ws">
-									<use href="./img/socials/svgSprite.svg#svg-whatsap"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-					<a class="link" href="mailto:burovalbert@mail.ru">burovalbert@mail.ru</a>
-				</nav>
+				<!--menu-icon-mobile-->
+				<div class="toggle-menu" id="menu-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!--header-menu -->
+				<div class="header-menu" id="header-menu">
+					<div class="header-menu__content">
+						<ul>
+							<li><a href="#skills">Навыки</a></li>
+							<li><a href="#portfolio">Портфолио</a></li>
+							<li><a href="#timeline">Как я работаю</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul>
+						<div class="header-menu__contacts">
+							<div class="socials">
+								<a href="#!" class="svg-tg">
+									<svg>
+										<use href="./img/socials/svgSprite.svg#svg-tg"></use>
+									</svg>
+								</a>
+								<a href="#!" class="svg-vk"> 
+									<svg>
+										<use href="./img/socials/svgSprite.svg#svg-vk"></use>
+									</svg>
+								</a>
+								<a href="#!" class="svg-fb">
+									<svg>
+										<use href="./img/socials/svgSprite.svg#svg-fb"></use>
+									</svg>
+								</a>
+								<a href="#!" class="svg-inst">
+									<img src="./img/socials/inst.svg" alt="">
+								</a>
+								<a href="#!" class="svg-ws">
+									<svg>
+										<use href="./img/socials/svgSprite.svg#svg-whatsap"></use>
+									</svg>
+								</a>
+							</div>
+							<a class="link" href="mailto:burovalbert@mail.ru">burovalbert@mail.ru</a>
+						</div>
+					</div>
+				</div>
 				<div class="header-social">
 					<a href="#!" class="header-social__link">
 						<svg class="svg-ln">
@@ -97,16 +99,13 @@
 						</svg>
 					</a>
 				</div>
-				<button class="header__burger-menu">
-					<span></span><span></span><span></span>
-				</button>
 			</div>
 		</div>
 	</header>
 
 	<section class="header-content">
 		<div class="container">
-			<div class="flex-wrapper">
+			<div class="header-content__wrapper">
 				<div class="header-content-text">
 					<div class="header-content__title">
 						<h1 class="h1 grad-border">Альберт Буров</h1>
@@ -130,7 +129,7 @@
 		</div>
 	</section>
 
-	<section class="header-skills" id="skills">
+	<section class="header-skills none" id="skills">
 		<div class="container">
 			<div class="header-skills__wrapper">
 				<div class="header-skills__col">
@@ -152,22 +151,22 @@
 					<div class="socials-wrapper">
 						<ul class="socials">
 							<li>
-								<a href="#!">
-									<svg class="svg-tg">
+								<a href="#!" class="svg-tg">
+									<svg >
 										<use href="./img/socials/svgSprite.svg#svg-tg"></use>
 									</svg>
 								</a>
 							</li>
 							<li>
-								<a href="#!">
-									<svg class="svg-vk">
+								<a href="#!" class="svg-vk">
+									<svg>
 										<use href="./img/socials/svgSprite.svg#svg-vk"></use>
 									</svg>
 								</a>
 							</li>
 							<li>
-								<a href="#!">
-									<svg class="svg-vk">
+								<a href="#!" class="svg-fb">
+									<svg>
 										<use href="./img/socials/svgSprite.svg#svg-fb"></use>
 									</svg>
 								</a>
@@ -186,8 +185,8 @@
 								</a>
 							</li>
 							<li>
-								<a href="#!">
-									<svg class="svg-ws">
+								<a href="#!" class="svg-ws">
+									<svg>
 										<use href="./img/socials/svgSprite.svg#svg-whatsap"></use>
 									</svg>
 								</a>
@@ -202,7 +201,7 @@
 		</div>
 	</section>
 
-	<section class="portfolio" id="portfolio">
+	<section class="portfolio none" id="portfolio">
 		<div class="container">
 			<div class="portfolio-title">
 				<h2 class="h2 grad-border">Портфолио</h2>
@@ -257,7 +256,7 @@
 		</div>
 	</section>
 
-	<section class="timeline" id="timeline">
+	<section class="timeline none" id="timeline">
 		<div class="container">
 			<div class="section-title">
 				<h2 class="h2 grad-border">Как я работаю</h2>
@@ -294,7 +293,7 @@
 		</div>
 	</section>
 
-	<section class="contacts" id="contacts">
+	<section class="contacts none" id="contacts">
 		<div class="container">
 			<div class="section-title">
 				<h2 class="h2 grad-border">Контакты</h2>
@@ -359,7 +358,7 @@
 		</div>
 	</section>
 
-	<footer class="footer">
+	<footer class="footer none">
 		<div class="container">
 			<div class="footer__corypthing">
 				<p>© 2023 — Альберт Буров</p>

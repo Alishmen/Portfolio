@@ -1,10 +1,36 @@
-.header-content {
+// .header-content {
 
+// }
+
+.header-content__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    // Mobile XS
+    @media(max-width: 599px) {
+        flex-direction: column;
+    }
 }
 
 .header-content-text {
     width: 540px;
     margin-top: 19px;
+    @media (max-width: 1199px) {
+        width: 420px;
+        margin-top: 8px;
+    }
+    // Mobile
+    @media(max-width: 899px) {
+        width: 350px;
+        margin-top: 39px;
+    }
+
+    // Mobile XS
+    @media(max-width: 599px) {
+        margin-top: 0;
+        width: 290px;
+    }
 }
 
 .header-content__title {
@@ -12,6 +38,23 @@
     font-weight: 700;
     line-height: 1; 
     margin-bottom: 30px;
+    @media (max-width: 1199px) {
+        font-size: 58px;
+        margin-bottom: 20px;
+    }
+    // Mobile
+    @media(max-width: 899px) {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    // Mobile XS
+    @media(max-width: 599px) {
+      font-size: 32px;
+      margin-bottom: 20px;
+      padding-bottom: 250px;
+      width: 64px;
+    }
 }
 
 .header-content__descr {
@@ -20,10 +63,29 @@
     font-weight: 400;
     line-height: 1.6; 
     margin-bottom: 30px;
+
+    @media (max-width: 1199px) {
+        font-size: 18px;
+    }
+    // Mobile
+    @media(max-width: 899px) {
+        font-size: 16px;
+    }
+
+    // Mobile XS
+    @media(max-width: 599px) {
+    }
 }
 
-.visible-descr {
+// .visible-descr {
 
+// }
+
+.header-content__btn {
+    // Mobile
+    @media(max-width: 899px) {
+        display: none;
+    }
 }
 
 .header-content__btn > *:first-child {
@@ -31,9 +93,27 @@
 }
 
 .header-content__photo {
-    width: 475px;
-    height: 410px;
+    max-width: 475px;
+    max-height: 410px;
     box-shadow: 40px 40px rgba(255, 255, 255, 0.5);
+
+    @media (max-width: 1199px) {
+        max-width: 376px;
+        max-height: 325px;
+    }
+
+    // Mobile
+    @media(max-width: 899px) {
+        max-width: 290px;
+        max-height: 250px;
+    }
+
+    // Mobile XS
+    @media(max-width: 599px) {
+        position: absolute;
+        z-index: -1;
+        margin-top: 84px;
+    }
 }
 
 
@@ -43,5 +123,10 @@
     display: flex;
     justify-content: center;
     margin-top: -156px;
+
+    // Mobile XS
+    @media(max-width: 599px) {
+        margin-top: 0;
+    }
 }
 
