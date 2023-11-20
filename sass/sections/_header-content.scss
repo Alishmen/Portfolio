@@ -18,7 +18,7 @@
     margin-top: 19px;
     @media (max-width: 1199px) {
         width: 420px;
-        margin-top: 8px;
+        margin-top: 4px;
     }
     // Mobile
     @media(max-width: 899px) {
@@ -123,6 +123,11 @@
     display: flex;
     justify-content: center;
     margin-top: -156px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-top: -86px;
+    }
 
     // Mobile XS
     @media(max-width: 599px) {
