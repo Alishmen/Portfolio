@@ -135,7 +135,8 @@ section {
 
     // Mobile XS
     @media(max-width: 599px) {
-        background-position: center bottom 8px;
+        background-position: center bottom 5px;
+        background-size: 100% 8px;
     }
 }
 
