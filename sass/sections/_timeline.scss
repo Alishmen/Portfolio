@@ -1,15 +1,40 @@
 .timeline {
     padding: 70px 0 90px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding: 60px 0 70px;
+    }
+    // Mobile
+    @media(max-width: 899px) {
+        padding: 40px 0 40px;
+    }
 }
 
 .section-title {
+    text-align: center;
     margin-bottom: 70px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 50px;
+    }
+    
+    // Mobile
+    @media(max-width: 899px) {
+        margin-bottom: 40px;
+    }
 }
 
 .timeline-wrapper {
     width: 850px;
     margin-left: auto;
     margin-right: auto;
+
+    // Mobile
+    @media(max-width: 899px) {
+        width: 100%;
+    }
 }
 
 
@@ -17,12 +42,63 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 1.3; 
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 2px;
+    background-size: 100% 6px;
+    background-image: linear-gradient(to right, $accent-color, $accent-color);
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        font-size: 20px;
+    }
+    // Mobile
+    @media(max-width: 899px) {
+        width: 246px;
+    }
+
+    // Mobile XS
+    @media(max-width: 599px) {
+        width: 100%;
+    }
 }
 
+
+ 
 .timeline-item {
     width: 50%;
     padding-bottom: 60px;
     position: relative;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-bottom: 67px;
+    }
+
+    // Mobile
+    @media(max-width: 899px) {
+        padding-bottom: 45px;
+    }
+
+    // Mobile XS
+    @media(max-width: 599px) {
+        width: 100%;
+    }
+    p {
+        /* Tablet */
+        @media (max-width: 1199px) {
+            font-size: 14px;
+        }
+        // Mobile
+        @media(max-width: 899px) {
+            width: 340px;
+        }
+
+        // Mobile XS
+        @media(max-width: 599px) {
+            width: 246px;
+        }
+    }
 
     &:last-child {
         padding-bottom: 0;
@@ -66,6 +142,7 @@
     &:after {
         right: -17px;
     }
+
     @media(max-width: 899px) {
         padding-left: 44px;
         text-align: left;
@@ -79,6 +156,9 @@
         &:after {
             right: auto;
             left: 0;
+        }
+        strong {
+            font-size: 14px;
         }
     }
 }
@@ -108,6 +188,10 @@
     
         &:after {
             left: 0;
+        }
+
+        strong {
+            font-size: 16px;
         }
     }
 }

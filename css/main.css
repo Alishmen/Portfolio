@@ -235,8 +235,19 @@ body > * {
 }
 
 .h2.grad-border {
-  background-position: center bottom 12px;
+  background-position: center bottom 10px;
   background-size: 100% 8px;
+  /* Tablet */
+}
+@media (max-width: 1199px) {
+  .h2.grad-border {
+    background-position: center bottom 8px;
+  }
+}
+@media (max-width: 899px) {
+  .h2.grad-border {
+    background-position: center bottom 5px;
+  }
 }
 
 .h3.grad-border {
@@ -990,10 +1001,33 @@ body > * {
 
 .timeline {
   padding: 70px 0 90px;
+  /* Tablet */
+}
+@media (max-width: 1199px) {
+  .timeline {
+    padding: 60px 0 70px;
+  }
+}
+@media (max-width: 899px) {
+  .timeline {
+    padding: 40px 0 40px;
+  }
 }
 
 .section-title {
+  text-align: center;
   margin-bottom: 70px;
+  /* Tablet */
+}
+@media (max-width: 1199px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 899px) {
+  .section-title {
+    margin-bottom: 40px;
+  }
 }
 
 .timeline-wrapper {
@@ -1001,17 +1035,77 @@ body > * {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 899px) {
+  .timeline-wrapper {
+    width: 100%;
+  }
+}
 
 .timeline-item__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.3;
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center bottom 2px;
+  background-size: 100% 6px;
+  background-image: linear-gradient(to right, #FBDC4D, #FBDC4D);
+  /* Tablet */
+}
+@media (max-width: 1199px) {
+  .timeline-item__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 899px) {
+  .timeline-item__title {
+    width: 246px;
+  }
+}
+@media (max-width: 599px) {
+  .timeline-item__title {
+    width: 100%;
+  }
 }
 
 .timeline-item {
   width: 50%;
   padding-bottom: 60px;
   position: relative;
+  /* Tablet */
+}
+@media (max-width: 1199px) {
+  .timeline-item {
+    padding-bottom: 67px;
+  }
+}
+@media (max-width: 899px) {
+  .timeline-item {
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 599px) {
+  .timeline-item {
+    width: 100%;
+  }
+}
+.timeline-item p {
+  /* Tablet */
+}
+@media (max-width: 1199px) {
+  .timeline-item p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 899px) {
+  .timeline-item p {
+    width: 340px;
+  }
+}
+@media (max-width: 599px) {
+  .timeline-item p {
+    width: 246px;
+  }
 }
 .timeline-item:last-child {
   padding-bottom: 0;
@@ -1064,6 +1158,9 @@ body > * {
     right: auto;
     left: 0;
   }
+  .timeline-item:nth-child(odd) strong {
+    font-size: 14px;
+  }
 }
 
 /* четные 2n*/
@@ -1088,6 +1185,9 @@ body > * {
   }
   .timeline-item:nth-child(even):after {
     left: 0;
+  }
+  .timeline-item:nth-child(even) strong {
+    font-size: 16px;
   }
 }
 

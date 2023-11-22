@@ -146,8 +146,18 @@ section {
 }
 
 .h2.grad-border {
-    background-position: center bottom 12px;
+    background-position: center bottom 10px;
     background-size: 100% 8px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        background-position: center bottom 8px;
+    }
+
+    // Mobile
+    @media(max-width: 899px) {
+        background-position: center bottom 5px;
+    }
 }
 
 .h3.grad-border {
