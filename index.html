@@ -110,9 +110,8 @@
 					<div class="header-content__title">
 						<h1 class="h1 grad-border">Альберт Буров</h1>
 					</div>
-					<div class="header-content__descr visible-descr">
-						<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и
-							выполнение ТЗ.</p>
+					<div class="header-content__descr">
+						<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнение ТЗ.</p>
 					</div>
 					<div class="header-content__btn">
 						<a href="#skills" class="btn">Познакомиться</a>
@@ -122,8 +121,8 @@
 				<div class="header-content__photo">
 					<img src="./img/bg/header-img.jpg" alt="img">
 				</div>
-				<div class="header-content__title mobile">
-					<h1 class="h1 grad-border">Альберт Буров</h1>
+				<div class="header-content__descr visible-descr">
+					<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнение ТЗ.</p>
 				</div>
 			</div>
 		</div>
@@ -204,7 +203,7 @@
 		</div>
 	</section>
 
-	<section class="portfolio none" id="portfolio">
+	<section class="portfolio " id="portfolio">
 		<div class="container">
 			<div class="portfolio-title">
 				<h2 class="h2 grad-border">Портфолио</h2>
@@ -212,7 +211,10 @@
 			<div class="portofolio-wrapper">
 				<div class="portfolio-card">
 					<div class="portfolio-card__img">
-						<img src="./img/card/1-big.jpg" alt="img">
+						<picture>
+							<source media="(max-width: 599px)" srcset="./img/card-adaptation/xs-big1.jpg">
+							<img src="./img/card/1-big.jpg" alt="img">
+						</picture>	
 					</div>
 					<div class="portfolio-card__text">
 						<div class="h4">Верстка “Форест тревел”</div>
@@ -221,7 +223,10 @@
 				</div>
 				<div class="portfolio-card">
 					<div class="portfolio-card__img">
-						<img src="./img/card/2-big.jpg" alt="img">
+						<picture>
+							<source media="(max-width: 599px)" srcset="./img/card-adaptation/xs-big2.jpg">
+							<img src="./img/card/2-big.jpg" alt="img">
+						</picture>	
 					</div>
 					<div class="portfolio-card__text">
 						<div class="h4">Сайт приложения “Юнит”</div>

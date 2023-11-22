@@ -1,17 +1,50 @@
 .portfolio {
     padding: 80px 0 90px;
     background: linear-gradient(0deg, #F5FBFF 0%, #F5FBFF 100%), #F4F8F9;
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding: 40px 0 60px;
+    }
+    // Mobile
+    @media(max-width: 899px) {
+        padding: 30px 0 40px;
+    }
 }
 
 .portfolio-title {
     margin-bottom: 65px;
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 40px;
+    }
+
+    // Mobile
+    @media(max-width: 899px) {
+        margin-bottom: 30px;
+    }
 }
 
 .portofolio-wrapper {
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 50px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        row-gap: 40px;
+    }
+
+    // Mobile
+    @media(max-width: 899px) {
+        row-gap: 20px;
+        column-gap: 15px;
+    }
+
+    // Mobile XS
+    @media(max-width: 599px) {
+        row-gap: 30px;
+    }
 }
 
 
@@ -20,6 +53,25 @@
         margin-bottom: 16px;
         max-width: 350px;
         max-height: 220px;
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            max-width: 270px;
+            max-height: 169px;
+            margin-bottom: 10px;
+        }
+
+        // Mobile
+        @media(max-width: 899px) {
+            max-width: 180px;
+            max-height: 140px;
+        }
+
+        // Mobile XS
+        @media(max-width: 599px) {
+            max-width: 290px;
+            max-height: 180px;
+        }
     }
 
     .portfolio-card__text {
@@ -28,23 +80,63 @@
             font-size: 24px;
             font-weight: 600;
             margin-bottom: 6px;
+            /* Tablet */
+            @media (max-width: 1199px) {
+                font-size: 24px;
+                margin-bottom: 4px;
+            }
+
+            // Mobile
+            @media(max-width: 899px) {
+                font-size: 16px;
+                width: 180px;
+            }
         }
 
         p {
             font-size: 18px;
             font-weight: 400;
+
+            /* Tablet */
+            @media (max-width: 1199px) {
+                font-size: 14px;
+            }
+
+            // Mobile
+            @media(max-width: 899px) {
+                width: 180px;
+                font-size: 10px;
+            }
+
         }
     }
+
+
 }
 
 .portfolio-card:first-child, .portfolio-card:nth-child(2) {
-    margin-bottom: 20px;
-
-
     .portfolio-card__img {
-        margin-bottom: 20px;
         max-width: 540px;
         max-height: 370px;
+        margin-bottom: 20px;
+        /* Tablet */
+        @media (max-width: 1199px) {
+            max-width: 420px;
+            max-height: 288px;
+        }
+
+        // Mobile
+        @media(max-width: 899px) {
+            max-width: 277.5px;
+            max-height: 180px;
+            margin-bottom: 10px;
+        }
+
+        // Mobile XS
+        @media(max-width: 599px) {
+            max-width: 290px;
+            max-height: 180px;
+        }
     }
 
     .portfolio-card__text {
@@ -53,11 +145,37 @@
             font-size: 30px;
             font-weight: 600;
             margin-bottom: 8px;
+
+            /* Tablet */
+            @media (max-width: 1199px) {
+                font-size: 24px;
+                margin-bottom: 6px;
+            }
+
+            // Mobile
+            @media(max-width: 899px) {
+                font-size: 18px;
+                width: 100%;
+                margin-bottom: 4px;
+            }
         }
 
         p {
             font-size: 20px;
             font-weight: 400;
+
+            /* Tablet */
+            @media (max-width: 1199px) {
+                font-size: 16px;
+            }
+
+            // Mobile
+            @media(max-width: 899px) {
+                width: 100%;
+                font-size: 14px;
+            }
         }
     }
+
+
 }

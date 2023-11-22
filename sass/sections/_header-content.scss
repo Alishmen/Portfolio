@@ -8,7 +8,7 @@
 
     // Mobile XS
     @media(max-width: 599px) {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
 
@@ -49,16 +49,26 @@
 
     // Mobile XS
     @media(max-width: 599px) {
-      display: none;  
+        margin-bottom: 20px;
     }
 }
 
-.header-content__title.mobile {
-    display: block;
-    font-size: 32px;
-    width: 220px;
-    margin-bottom: 20px; 
+.visible-descr {
+    display: none;
 }
+
+// Mobile XS
+@media(max-width: 599px) {
+    .header-content__descr {
+        display: none;
+    }
+
+    .visible-descr {
+        display: block;
+    }
+}
+
+
 
 .header-content__descr {
     font-size: 22px;
@@ -80,10 +90,6 @@
         margin-bottom: 0;
     }
 }
-
-// .visible-descr {
-
-// }
 
 .header-content__btn {
     // Mobile
