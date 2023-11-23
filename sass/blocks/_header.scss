@@ -25,39 +25,80 @@
 }
 
 @media(max-width: 899px) {
+    // .toggle-menu {
+    //     z-index: 6;
+    //     position: absolute;
+    //     right: 15px;
+    //     width: 40px;
+    //     height: 25px;
+    //     cursor: pointer;
+    //     & span {
+    //         position: absolute;
+    //         width: 40px;
+    //         height: 5px;
+    //         background-color: #000;
+    //         transition: transform 0.4s, opacity 0.4s, background-color 0.4s;
+    //     }
+    
+    //     & span:nth-child(1) {
+    //         transform: translateY(10px);
+    //     } 
+    //     & span:nth-child(3) {
+    //         transform: translateY(20px);
+    //     } 
+    
+    //     &.active span:nth-child(2){
+    //         transform: translateY(10px) rotate(45deg);
+    //     }
+        
+    //     &.active span:nth-child(1){
+    //         opacity: 0;
+    //     }
+        
+    //     &.active span:nth-child(3){
+    //         transform: translateY(10px)rotate(-45deg);
+    //     }
+    // }
+
     .toggle-menu {
         z-index: 6;
-        position: absolute;
-        right: 15px;
+        position: relative;
         width: 40px;
-        height: 25px;
+        height: 5px;
+        background-color: #000;
         cursor: pointer;
-        & span {
+
+    
+        &::before, &::after {
+            content: "";
             position: absolute;
+            left: 0;
             width: 40px;
             height: 5px;
             background-color: #000;
             transition: transform 0.4s, opacity 0.4s, background-color 0.4s;
         }
     
-        & span:nth-child(1) {
-            transform: translateY(10px);
-        } 
-        & span:nth-child(3) {
-            transform: translateY(20px);
-        } 
+        &::before {
+            transform: translateY(-10px);
+        }
     
-        &.active span:nth-child(2){
-            transform: translateY(10px) rotate(45deg);
+        &::after {
+            transform: translateY(10px);
+        }
+
+        &.active {
+            background-color: transparent;
+        }
+
+        &.active::before{
+            transform: rotate(-45deg);
         }
         
-        &.active span:nth-child(1){
-            opacity: 0;
+        &.active::after{
+            transform: rotate(45deg);
         }
-        
-        &.active span:nth-child(3){
-            transform: translateY(10px)rotate(-45deg);
-        }
+
     }
 
 }
@@ -67,6 +108,7 @@
     @media(max-width: 899px) {
         display: flex;
     }
+
 }
 
 .header-menu {
