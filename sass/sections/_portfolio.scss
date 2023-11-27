@@ -115,6 +115,7 @@
 
 .portfolio-card:first-child, .portfolio-card:nth-child(2) {
     .portfolio-card__img {
+        
         max-width: 540px;
         max-height: 370px;
         margin-bottom: 20px;
@@ -135,6 +136,29 @@
         @media(max-width: 599px) {
             max-width: 290px;
             max-height: 180px;
+        }
+
+        img {
+            height: 370px;
+            width: 540px;
+
+            /* Tablet */
+            @media (max-width: 1199px) {
+                width: 420px;
+                height: 288px;
+            }
+
+            // Mobile
+            @media(max-width: 899px) {
+                width: 354px;
+                height: 180px;
+            }
+
+            // Mobile XS
+            @media(max-width: 599px) {
+                width: 290px;
+                height: 180px;
+            }
         }
     }
 

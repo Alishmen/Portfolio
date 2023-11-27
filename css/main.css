@@ -1001,6 +1001,29 @@ body > * {
     max-height: 180px;
   }
 }
+.portfolio-card:first-child .portfolio-card__img img, .portfolio-card:nth-child(2) .portfolio-card__img img {
+  height: 370px;
+  width: 540px;
+  /* Tablet */
+}
+@media (max-width: 1199px) {
+  .portfolio-card:first-child .portfolio-card__img img, .portfolio-card:nth-child(2) .portfolio-card__img img {
+    width: 420px;
+    height: 288px;
+  }
+}
+@media (max-width: 899px) {
+  .portfolio-card:first-child .portfolio-card__img img, .portfolio-card:nth-child(2) .portfolio-card__img img {
+    width: 354px;
+    height: 180px;
+  }
+}
+@media (max-width: 599px) {
+  .portfolio-card:first-child .portfolio-card__img img, .portfolio-card:nth-child(2) .portfolio-card__img img {
+    width: 290px;
+    height: 180px;
+  }
+}
 .portfolio-card:first-child .portfolio-card__text, .portfolio-card:nth-child(2) .portfolio-card__text {
   line-height: 1.3;
 }
