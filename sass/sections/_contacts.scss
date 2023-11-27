@@ -63,9 +63,9 @@
     }
 }
 
-.contacts-list {
+// .contacts-list {
     
-}
+// }
 
 .contacts-list__item {
     display: flex;
@@ -118,15 +118,11 @@
     margin-bottom: 0;
 }
 
-.contact-socials {
+.contacts-socials {
     margin-top: 32px;
     /* Tablet */
     @media (max-width: 1199px) {
         margin-top: 25px;
-    }
-
-    .socials li{
-        display: flex;
     }
 }
 
@@ -142,7 +138,7 @@
 
     // Mobile
     @media(max-width: 899px) {
-        width: 270px;
+        width: 100%;
         font-size: 14px;
     }
 

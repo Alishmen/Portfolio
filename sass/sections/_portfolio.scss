@@ -53,6 +53,8 @@
         margin-bottom: 16px;
         max-width: 350px;
         max-height: 220px;
+        object-fit: cover;
+        object-position: center ;
 
         /* Tablet */
         @media (max-width: 1199px) {
@@ -107,11 +109,8 @@
                 width: 180px;
                 font-size: 10px;
             }
-
         }
     }
-
-
 }
 
 .portfolio-card:first-child, .portfolio-card:nth-child(2) {
