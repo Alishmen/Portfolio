@@ -51,28 +51,51 @@
 .portfolio-card {
     .portfolio-card__img {
         margin-bottom: 16px;
-        max-width: 350px;
-        max-height: 220px;
+        // max-width: 350px;
+        // max-height: 220px;
         object-fit: cover;
         object-position: center ;
 
         /* Tablet */
         @media (max-width: 1199px) {
-            max-width: 270px;
-            max-height: 169px;
+            // max-width: 270px;
+            // max-height: 169px;
             margin-bottom: 10px;
         }
 
         // Mobile
         @media(max-width: 899px) {
-            max-width: 180px;
-            max-height: 140px;
+            // max-width: 180px;
+            // max-height: 140px;
         }
 
         // Mobile XS
         @media(max-width: 599px) {
-            max-width: 290px;
-            max-height: 180px;
+            // max-width: 290px;
+            // max-height: 180px;
+        }
+
+        img {
+            width: 350px;
+            height: 220px;
+
+            /* Tablet */
+            @media (max-width: 1199px) {
+                width: 270px;
+                height: 169px;
+            }
+
+            // Mobile
+            @media(max-width: 899px) {
+                width: 180px;
+                height: 140px;
+            }
+
+            // Mobile XS
+            @media(max-width: 599px) {
+                width: 290px;
+                height: 180px;
+            }
         }
     }
 
@@ -115,27 +138,28 @@
 
 .portfolio-card:first-child, .portfolio-card:nth-child(2) {
     .portfolio-card__img {
-        
-        max-width: 540px;
-        max-height: 370px;
+        // max-width: 540px;
+        // max-height: 370px;
         margin-bottom: 20px;
+        object-fit: cover;
+        object-position: center ;
         /* Tablet */
         @media (max-width: 1199px) {
-            max-width: 420px;
-            max-height: 288px;
+            // max-width: 420px;
+            // max-height: 288px;
         }
 
         // Mobile
         @media(max-width: 899px) {
-            max-width: 277.5px;
-            max-height: 180px;
+            // max-width: 277.5px;
+            // max-height: 180px;
             margin-bottom: 10px;
         }
 
         // Mobile XS
         @media(max-width: 599px) {
-            max-width: 290px;
-            max-height: 180px;
+            // max-width: 290px;
+            // max-height: 180px;
         }
 
         img {
@@ -150,7 +174,7 @@
 
             // Mobile
             @media(max-width: 899px) {
-                width: 354px;
+                width: 277.5px;
                 height: 180px;
             }
 
