@@ -142,6 +142,7 @@ body > * {
 }
 .svg-fb:hover, .svg-vk:hover, .svg-tg:hover, .svg-inst:hover, .svg-ws:hover {
   transform: scale(0.88);
+  opacity: 0.75;
 }
 @media (max-width: 899px) {
   .svg-fb, .svg-vk, .svg-tg, .svg-inst, .svg-ws {
@@ -165,10 +166,11 @@ body > * {
     padding: 16px 26px;
   }
 }
-
 .btn:hover {
-  background-color: #f7cb06;
-  color: #fff;
+  background-color: #FFEB8D;
+}
+.btn:active {
+  background-color: #F5D22D;
 }
 
 .btn--light {
@@ -179,9 +181,11 @@ body > * {
     padding: 16px 26px;
   }
 }
-
 .btn--light:hover {
-  background-color: #a9bac4;
+  background-color: #D1EDFF;
+}
+.btn--light:active {
+  background-color: #B0DCF8;
 }
 
 .btn:active {
@@ -514,7 +518,11 @@ body > * {
 
 .header-menu__content li:hover {
   transform: scale(0.88);
-  color: #030303;
+  color: #ff543e;
+}
+
+.header-menu__content li:active {
+  color: #ff543e;
 }
 
 .header-menu__contacts {
@@ -523,6 +531,9 @@ body > * {
 @media (max-width: 899px) {
   .header-menu__contacts {
     display: block;
+  }
+  .header-menu__contacts a {
+    margin-top: 20px;
   }
 }
 
@@ -543,6 +554,7 @@ body > * {
 
 .header-social a:hover {
   transform: scale(0.88);
+  opacity: 0.75;
 }
 
 .footer {
@@ -873,7 +885,7 @@ body > * {
 }
 
 .portfolio-title {
-  margin-bottom: 65px;
+  margin-bottom: 30px;
   /* Tablet */
 }
 @media (max-width: 1199px) {
@@ -885,6 +897,34 @@ body > * {
   .portfolio-title {
     margin-bottom: 30px;
   }
+}
+
+.portfolio-variable {
+  display: flex;
+  margin-bottom: 33px;
+  column-gap: 70px;
+}
+@media (max-width: 899px) {
+  .portfolio-variable {
+    display: none;
+  }
+}
+
+.portfolio-variable__item {
+  color: #9EC2D0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+.portfolio-variable__item:hover {
+  color: red;
+}
+
+.portfolio-variable__item.active {
+  color: #000;
 }
 
 .portofolio-wrapper {
@@ -911,11 +951,60 @@ body > * {
   }
 }
 
+.portofolio-wrapper a {
+  transition: color 0.4s ease-in;
+}
+
+.portofolio-wrapper a:hover {
+  color: #EF6857;
+}
+
 .portfolio-card .portfolio-card__img {
   margin-bottom: 16px;
   object-fit: cover;
   object-position: center;
+  display: inline-block;
+  position: relative;
   /* Tablet */
+}
+.portfolio-card .portfolio-card__img:after {
+  content: "";
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.portfolio-card .portfolio-card__img:hover:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  background-image: linear-gradient(to left, rgba(255, 221, 85, 0.75), rgba(255, 221, 85, 0.75));
+  opacity: 0.8;
+}
+.portfolio-card .portfolio-card__img:before {
+  content: "";
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.portfolio-card .portfolio-card__img:hover:before {
+  content: "Смотреть проект";
+  padding: 14px 20px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  width: 208px;
+  height: 51px;
+  margin: -26px 0 0 -105px;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #ef6857 0 0 no-repeat;
+  z-index: 100;
+  opacity: 1;
 }
 @media (max-width: 1199px) {
   .portfolio-card .portfolio-card__img {

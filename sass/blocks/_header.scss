@@ -177,14 +177,22 @@
 
 .header-menu__content li:hover {
     transform: scale(0.88);
-    color: #030303;
+    color: #ff543e;
+}
+
+.header-menu__content li:active {
+    color: #ff543e;
 }
 
 .header-menu__contacts {
     display: none; 
     @media(max-width: 899px) {
         display: block;
+        a {
+            margin-top: 20px
+        };
     }
+
 }
 
 .header-social {
@@ -203,6 +211,7 @@
 
 .header-social a:hover{
     transform: scale(0.88);
+    opacity: 0.75;
 }
 
 

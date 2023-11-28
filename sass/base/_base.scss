@@ -57,6 +57,7 @@ body > * {
 
     &:hover {
         transform: scale(0.88);
+        opacity: 0.75;
     }
 
     // Mobile
@@ -81,23 +82,34 @@ body > * {
     @media (max-width: 1199px) {
         padding: 16px 26px;
     }
+
+    &:hover {
+        background-color: #FFEB8D;
+    }
+
+    &:active {
+        background-color: #F5D22D;
+    }
+
+
 }
 
-.btn:hover {
-    background-color: $accent-color-hover;
-    color: #fff;
-}
 
 .btn--light {
     background-color: #EFF7FC;
     @media (max-width: 1199px) {
         padding: 16px 26px;
     }
+
+    &:hover {
+        background-color: #D1EDFF;
+    }
+
+    &:active {
+        background-color: #B0DCF8;
+    }
 }
 
-.btn--light:hover {
-    background-color: $accent-color-hover-light;
-}
 
 .btn:active {
     transform: scale(0.98);
